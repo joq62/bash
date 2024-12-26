@@ -2,7 +2,7 @@ all:
 	echo hello
 clean:
 	rm -rf *~ */*~ */*/*~
-	rm -rf cmn erl_crash.dump
+	rm -rf add test_Ebin cmn erl_crash.dump
 start_node:
 	./stop_node.sh $(nodename) $(cookie)
 	./start_node.sh $(nodename) $(cookie)
